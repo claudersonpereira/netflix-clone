@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="./css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css">
+
+    <title>Netflix Clone</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-nav">
+                <h2 class="logo">
+                    NETFLIX
+                </h2>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                </nav>
+            </div>
+            
+            <div class="profile-photo">
+                <div>
+                    <img src="./img/profile-photo.png" height="36px" alt="" srcset="">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="filme-principal">
+            <div class="container">
+                <div class="titulo-serie">
+                    <div class="titulo">
+                        <img src="./img/titulo_serie.webp" class="img-titulo" alt="" srcset="">
+                    </div>
+                    <div class="botoes">
+                        <button class=""> 
+                            <i class="fas fa-play"></i> Assistir
+                        </button>
+                        <button class="">
+                            <i class="fas fa-info-circle"></i> Mais informações
+                        </button>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
+    </main>
+    <div class="carousel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="./img/carousel/awake.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/carousel/dr-house.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/carousel/flash.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/carousel/greys-anatomy.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/carousel/simpsons.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/carousel/viuva-negra.jpg">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/carousel/wanda-vision.jpg">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/5c771fc2ac.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/owl/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/owl/owl.carousel.min.js"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    </script>
+    
+</body>
+
+</html>
